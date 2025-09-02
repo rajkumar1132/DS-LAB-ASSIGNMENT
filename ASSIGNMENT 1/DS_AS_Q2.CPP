@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     int data[100], size;
 
-    // Step 1: Get array size from user
+    // Get array size from user
     cout << "Enter number of elements (1-100): " << endl;
     cin >> size;
 
@@ -13,13 +13,13 @@ int main() {
         return 1;
     }
 
-    // Step 2: Input elements
+    // Input elements
     cout << "Enter " << size << " elements:" << endl;
     for (int i = 0; i < size; i++) {
         cin >> data[i];
     }
 
-    // Step 3: Remove duplicates
+    // Remove duplicates
     int uniqueCount = 0; // Tracks number of unique elements
 
     for (int i = 0; i < size; i++) {
@@ -40,7 +40,7 @@ int main() {
         }
     }
 
-    // Step 4: Display array without duplicates
+    // Display array without duplicates
     cout << "Array without duplicates:" << endl;
     for (int i = 0; i < uniqueCount; i++) {
         cout << data[i] << " ";
